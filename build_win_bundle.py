@@ -15,4 +15,4 @@ args=[sys.executable,'-m','PyInstaller','--noconfirm','--clean','--windowed','--
       '--collect-all','playwright','--hidden-import','musinsa_dashboard','--hidden-import','comparison_dashboard','--hidden-import','kream_quotes','--hidden-import','auto_discovery','--add-data',f'{browsers}{os.pathsep}playwright_browsers',
       str(base/'price_compare.py')]
 subprocess.check_call(args,cwd=base)
-print('OUTPUT:',base/'dist'/'가격비교기')
+print("OUTPUT: dist")
